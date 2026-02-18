@@ -1,0 +1,69 @@
+/* Page styling */
+body{
+    font-family: Arial, sans-serif;
+    background:whitesmoke;
+
+    /* Center container in middle of screen */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+}
+
+/* Box that holds the app */
+.container{
+    background:#00ffcc44;
+    padding:20px;
+    width:320px;
+    border-radius:10px;
+    
+    text-align:center;
+}
+
+/* Input field styling */
+input{
+    width:70%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Add button styling */
+button{
+    padding:8px 12px;
+    border:none;
+    background:rgba(50, 205, 174, 0.815);
+    color:black;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Button hover effect */
+button:hover{
+    background:whitesmoke;
+}
+
+/* Ordered list styling */
+ol{
+    margin-top:15px;
+    padding-left:20px;
+    text-align:left;
+}
+
+/* Styling applied to each task item */
+.task-item{
+    background:#eef3ff;
+    margin:6px 0;
+    padding:8px;
+    border-radius:5px;
+
+    /* Cursor pointer shows it is clickable */
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+/* Hover effect on task */
+.task-item:hover{
+    background:#d6e4ff;
+}
