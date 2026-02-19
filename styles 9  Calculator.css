@@ -1,0 +1,119 @@
+body {
+    background:white; 
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background: #1a1a2e;
+    width: 340px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #00f7ff33;
+}
+
+/* Subtle divider line */
+.display {
+    border-bottom: 1px solid #2e2e4d;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: right;
+    border: none;
+    background: transparent;
+    color: #00f7ff;
+}
+
+/* Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 60px;
+    gap: 12px;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #222244;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 0 10px #00f7ff22;
+}
+
+/* Neon hover glow */
+button:hover {
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Ripple effect */
+button::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #00f7ff;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 1s;
+}
+
+button:active::after {
+    width: 200px;
+    height: 200px;
+    opacity: 0.2;
+    transform: scale(0);
+}
+
+/* Operators neon pink */
+.operator {
+    color: green ;
+    box-shadow: 0 0 10px #ff00ff55;
+}
+
+.operator:hover {
+    box-shadow: 0 0 15px #ff007342;
+}
+
+.equal {
+    background: #00f7ff;
+    color: #000;
+    font-weight: bold;
+}
+
+.equal:hover {
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+.light {
+    background: hsla(197, 29%, 23%, 0.571);
+}
+.equal {
+    background: #00f7ff;
+    color: #000;
+    font-weight: bold;
+    grid-column: span 4;   /* ADD THIS */
+}
+.calculator {
+    background: #1a1a2e;
+    width: 340px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 
+        0 0 20px #00f7ff22,
+        0 0 40px #ff00ff11;
+}
